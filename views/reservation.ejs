@@ -4,30 +4,36 @@
     <div class="reservation-box">
         <div class="reservation-content">
             <p class="text-center text-light pt-4">Reservation table</p>
-            <h1 class="text-center text-light py-3">Enter Your Information</h1>
-            <form action="" class="row p-5">
+            <h1 class="text-center text-light ">Enter Your Information</h1>
+            <form action="/infos" class="row p-5" method="post">
                 <div class="col-md-6">
-                    <label for="inputName" class="form-label text-light">Name</label>
-                    <input type="name" class="form-control bg-transparent " id="inputName" placeholder="Amadou Oury">
+                    <label for="inputName" class="form-label text-light">FirstName</label>
+                    <input type="text" class="form-control bg-transparent " id="inputName" name="inputName" placeholder="Diallo">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label text-light">Email</label>
-                    <input type="email" class="form-control bg-transparent" id="inputEmail4" placeholder="ouryetude@gmail.com">
+                    <label for="inputLartName" class="form-label text-light">LartName</label>
+                    <input type="text" class="form-control bg-transparent" id="inputLartName" name="inputLartName" placeholder="Oury">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputName" class="form-label text-light">Name</label>
-                    <input type="name" class="form-control bg-transparent " id="inputName" placeholder="Amadou Oury">
+                    <label for="birthdaytime" class="form-label text-light">Date and time</label>
+                    <input type="datetime-local" class="form-control bg-transparent" id="birthdaytime" name="birthdaytime">
                 </div>
                 <div class="col-md-6">
-                    <label for="inputEmail4" class="form-label text-light">Email</label>
-                    <input type="email" class="form-control bg-transparent" id="inputEmail4" placeholder="ouryetude@gmail.com">
+                    <label for="inputEmail4" class="form-label text-light">Phone</label>
+                    <input type="tel" class="form-control bg-transparent" id="inputEmail4" name="numberPhone" placeholder="00/06/06/00/70">
                 </div>
                 <div class="col-12">
-                    <label for="exampleFormControlTextarea1" class="form-label text-light">Textarea</label>
-                    <textarea type="text" class="form-control bg-transparent" id="exampleFormControlTextarea1" placeholder="1234 Main St" rows="4"></textarea>
+                    <label class="form-label text-light" for="autoSizingSelect">Number of people</label>
+                    <input type="number" class="form-control bg-transparent" id="inputEmail4" name="number" placeholder="Number">
+                </div>
+                <div class="col-12">
+                    <label for="exampleFormControlTextarea1" class="form-label text-light">Send a message</label>
+                    <textarea type="text" class="form-control bg-transparent" id="exampleFormControlTextarea1" name="message" placeholder="1234 Main St" rows="4"></textarea>
                 </div>
                 <div class="col-12 mt-3">
                     <button type="submit" class="bt">Send</button>
+                    <a type="submit" href="/perso" class="bt">View Reservation</a>
+
                 </div>
             </form>
         </div>
